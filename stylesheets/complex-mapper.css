@@ -1,0 +1,15 @@
+.mathcal {
+	font-family: "Lucida Calligraphy", "Monotype Corsiva", "URW Chancery L", "Apple Chancery", "Tex Gyre Chorus", cursive,
+		serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+	-moz-appearance: textfield;
+}
