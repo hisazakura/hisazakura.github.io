@@ -1,0 +1,97 @@
+<svg viewBox="0 0 465 465" xmlns="http://www.w3.org/2000/svg">
+	<circle cx="50%" cy="50%" stroke="white" stroke-width="15" fill="none">
+		<animate attributeName="r" values="232.5;97.5;97.5;0" dur="5s" repeatCount="indefinite" keyTimes="0;0.18;0.8;1"
+			keySplines="
+							0.45, 0, 0.55, 1;
+							0.0 0.0 1 1;
+							0.45, 0, 0.55, 1" calcMode="spline" />
+	</circle>
+	<circle cx="50%" cy="50%" r="110" stroke="white" stroke-width="3" fill="none">
+		<animate attributeName="r" values="0;110;110;0" dur="5s" repeatCount="indefinite" keyTimes="0;0.15;0.8;1"
+			keySplines="
+							0.45, 0, 0.55, 1;
+							0.0 0.0 1 1;
+							0.45, 0, 0.55, 1" calcMode="spline" />
+	</circle>
+	<circle cx="50%" cy="50%" r="130" stroke="white" stroke-width="5" fill="none">
+		<animate attributeName="r" values="0;130;130;0" dur="5s" repeatCount="indefinite" keyTimes="0;0.1;0.8;1"
+			keySplines="
+							0.45, 0, 0.55, 1;
+							0.0 0.0 1 1;
+							0.45, 0, 0.55, 1" calcMode="spline" />
+	</circle>
+	<mask id="SCHALEmask">
+		<rect x="0" y="0" width="465" height="465" fill="white" />
+		<circle cx="50%" cy="50%" r="13" fill="black" />
+		<rect x="-50" y="-50" width="279.5" height="279.5" rx="42" />
+		<rect x="235.5" y="-50" width="279.5" height="279.5" rx="42" />
+		<rect x="235.5" y="235.5" width="279.5" height="279.5" rx="42" />
+		<rect x="-50" y="235.5" width="279.5" height="279.5" rx="42" />
+		<path d="M232.5 0 l-4 16 l-4 -17Z" fill="black" />
+		<path d="M232.5 0 l4 16 l4 -17Z" fill="black" />
+		<path d="M0 232.5 l16 -4 l-17 -4Z" fill="black" />
+		<path d="M0 232.5 l16 4 l-17 4Z" fill="black" />
+		<path d="M232.5 465 l-4 -16 l-4 17Z" fill="black" />
+		<path d="M232.5 465 l4 -16 l4 17Z" fill="black" />
+		<path d="M465 232.5 l-16 -4 l17 -4Z" fill="black" />
+		<path d="M465 232.5 l-16 4 l17 4Z" fill="black" />
+	</mask>
+
+	<circle cx="50%" cy="50%" fill="white" mask="url(#SCHALEmask)">
+		<animate attributeName="r" values="0;232.5;232.5;0" dur="5s" repeatCount="indefinite" keyTimes="0;0.2;0.8;1"
+			keySplines="
+							0.45, 0, 0.55, 1;
+							0.0 0.0 1 1;
+							0.45, 0, 0.55, 1" calcMode="spline" />
+	</circle>
+
+	<mask id="SCHALEmask2">
+		<rect x="0" y="0" width="465" height="465" fill="black" />
+
+		<path d="M232.5 232.5 m46.669 46.669 l15 20 l5 -5Z" fill="white" />
+		<path d="M232.5 232.5 m-46.669 -46.669 l-15 -20 l-5 5Z" fill="white" />
+		<path d="M232.5 232.5 m-46.669 46.669 l-15 20 l-5 -5Z" fill="white" />
+		<path d="M232.5 232.5 m46.669 -46.669 l15 -20 l5 5Z" fill="white" />
+	</mask>
+	<circle cx="50%" cy="50%" r="87.5" fill="white" mask="url(#SCHALEmask2)">
+		<animate attributeName="r" values="0;87.5;87.5;0" dur="5s" repeatCount="indefinite" keyTimes="0;0.2;0.8;1"
+			keySplines="
+							0.45, 0, 0.55, 1;
+							0.0 0.0 1 1;
+							0.45, 0, 0.55, 1" calcMode="spline" />
+	</circle>
+
+	<mask id="SCHALEmask3">
+		<rect x="0" y="0" width="465" height="465" fill="white" />
+		<ellipse cx="232.5" cy="67.5" rx="114" ry="25" fill="black">
+			<animate attributeName="rx" values="0;0;114;114;0" dur="5s" repeatCount="indefinite"
+				keyTimes="0;0.12;0.22;0.8;1" keySplines="
+							0.0 0.0 1 1;
+							0.45, 0, 0.55, 1;
+							0.0 0.0 1 1;
+							0.45, 0, 0.55, 1" calcMode="spline" />
+			<animate attributeName="ry" values="0;0;25;25;0" dur="5s" repeatCount="indefinite"
+				keyTimes="0;0.12;0.22;0.8;1" keySplines="
+							0.0 0.0 1 1;
+							0.45, 0, 0.55, 1;
+							0.0 0.0 1 1;
+							0.45, 0, 0.55, 1" calcMode="spline" />
+		</ellipse>
+	</mask>
+
+	<ellipse cx="232.5" cy="67.5" rx="148" ry="30" fill="white" mask="url(#SCHALEmask3)">
+		<animate attributeName="rx" values="0;0;148;148;0" dur="5s" repeatCount="indefinite" keyTimes="0;0.1;0.2;0.8;1"
+			keySplines="
+							0.0 0.0 1 1;
+							0.45, 0, 0.55, 1;
+							0.0 0.0 1 1;
+							0.45, 0, 0.55, 1" calcMode="spline" />
+		<animate attributeName="ry" values="0;0;30;30;0" dur="5s" repeatCount="indefinite" keyTimes="0;0.1;0.2;0.8;1"
+			keySplines="
+							0.0 0.0 1 1;
+							0.45, 0, 0.55, 1;
+							0.0 0.0 1 1;
+							0.45, 0, 0.55, 1" calcMode="spline" />
+	</ellipse>
+<!-- <rect x="5" y="5" width="455" height="455" rx="50" fill="none" stroke="white" stroke-width="3" /> -->
+</svg>

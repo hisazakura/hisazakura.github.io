@@ -1,0 +1,48 @@
+<svg viewBox="-5 -5 310 310" xmlns="http://www.w3.org/2000/svg">
+	<style>
+		.darken {
+			mix-blend-mode: darken;
+		}
+	</style>
+	<filter id="complexMapperFilter1">
+		<feBlend mode="darken" in="SourceGraphic" in2="BackgroundImage" />
+	</filter>
+	<mask id="complexMapperMask1">
+		<rect width="300" height="300" rx="50" fill="white" />
+		<circle cx="180" cy="150" r="30" fill="black" stroke="white" stroke-width="2" />
+		<circle cx="120" cy="150" r="30" fill="black" stroke="white" stroke-width="2" />
+		<circle cx="150" cy="180" r="30" fill="black" stroke="white" stroke-width="2" class="darken" />
+		<circle cx="150" cy="120" r="30" fill="black" stroke="white" stroke-width="2" class="darken" />
+		<circle cx="150" cy="150" r="30" fill="black"/>
+	</mask>
+	<g mask="url(#complexMapperMask1)">
+		<circle cx="300" cy="150" r="150" fill="none" stroke="rgba(13, 110, 253, 1)" stroke-width="2" />
+		<circle cx="225" cy="150" r="75" fill="none" stroke="rgba(13, 110, 253, 1)" stroke-width="2" />
+		<circle cx="200" cy="150" r="50" fill="none" stroke="rgba(13, 110, 253, 1)" stroke-width="2" />
+		<circle cx="187.5" cy="150" r="37.5" fill="none" stroke="rgba(13, 110, 253, 1)" stroke-width="2" />
+		<circle cx="180" cy="150" r="30" fill="none" stroke="rgba(13, 110, 253, 1)" stroke-width="2" />
+		<circle cx="0" cy="150" r="150" fill="none" stroke="rgba(13, 110, 253, 1)" stroke-width="2" />
+		<circle cx="75" cy="150" r="75" fill="none" stroke="rgba(13, 110, 253, 1)" stroke-width="2" />
+		<circle cx="100" cy="150" r="50" fill="none" stroke="rgba(13, 110, 253, 1)" stroke-width="2" />
+		<circle cx="112.5" cy="150" r="37.5" fill="none" stroke="rgba(13, 110, 253, 1)" stroke-width="2" />
+		<circle cx="120" cy="150" r="30" fill="none" stroke="rgba(13, 110, 253, 1)" stroke-width="2" />
+		<line x1="150" x2="150" y1="0" y2="300" fill="none" stroke="rgba(13, 110, 253, 1)" stroke-width="2" />
+	</g>
+	
+	<g mask="url(#complexMapperMask1)">
+		<circle cx="150" cy="0" r="150" fill="none" stroke="rgba(220, 53, 69, 1)" stroke-width="2" />
+		<circle cx="150" cy="75" r="75" fill="none" stroke="rgba(220, 53, 69, 1)" stroke-width="2" />
+		<circle cx="150" cy="100" r="50" fill="none" stroke="rgba(220, 53, 69, 1)" stroke-width="2" />
+		<circle cx="150" cy="112.5" r="37.5" fill="none" stroke="rgba(220, 53, 69, 1)" stroke-width="2" />
+		<circle cx="150" cy="120" r="30" fill="none" stroke="rgba(220, 53, 69, 1)" stroke-width="2" />
+		<circle cx="150" cy="300" r="150" fill="none" stroke="rgba(220, 53, 69, 1)" stroke-width="2" />
+		<circle cx="150" cy="225" r="75" fill="none" stroke="rgba(220, 53, 69, 1)" stroke-width="2" />
+		<circle cx="150" cy="200" r="50" fill="none" stroke="rgba(220, 53, 69, 1)" stroke-width="2" />
+		<circle cx="150" cy="187.5" r="37.5" fill="none" stroke="rgba(220, 53, 69, 1)" stroke-width="2" />
+		<circle cx="150" cy="180" r="30" fill="none" stroke="rgba(220, 53, 69, 1)" stroke-width="2" />
+		<line x1="0" x2="300" y1="150" y2="150" fill="none" stroke="rgba(220, 53, 69, 1)" stroke-width="2" />
+	</g>
+	
+
+	<rect width="300" height="300" rx="50" fill="none" stroke="white" stroke-width="3" />
+</svg>

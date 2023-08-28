@@ -1,0 +1,11 @@
+.form-control::placeholder {
+	color: #6c757d;
+}
+
+.bg-darker {
+	background-color: #1a1d20!important;
+}
+
+.text-light-subtle {
+	color: #adb5bd;
+}
