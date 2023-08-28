@@ -1,6 +1,6 @@
 <br/>
 <p align="center">
-  <a href="https://github.com/hisazakura/hisazakura.github.io">
+  <a href="https://hisazakura.github.io">
     <img src="https://raw.githubusercontent.com/hisazakura/hisazakura.github.io/main/images/logo.svg" alt="Logo" width="80" height="80">
   </a>
 
