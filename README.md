@@ -4,13 +4,16 @@
     <img src="https://raw.githubusercontent.com/hisazakura/hisazakura.github.io/main/images/logo.svg" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Athanasia on Pages</h3>
+  <h3 align="center">
+    Athanasia on 
+    <img src="https://raw.githubusercontent.com/hisazakura/hisazakura.github.io/main/images/pages.svg" alt="Pages" height="22" style="vertical-align:middle">
+  </h3>
 
   <p align="center">
     Explore a collection of my web projects in this online space
     <br/>
     <br/>
-    <a href="https://github.com/hisazakura/hisazakura.github.io">View Demo</a>
+    <a href="https://hisazakura.github.io">Explore</a>
     .
     <a href="https://github.com/hisazakura/hisazakura.github.io/issues">Report Bug</a>
     .
