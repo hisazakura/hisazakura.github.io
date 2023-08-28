@@ -1,0 +1,2269 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>Athanasia</title>
+		<link rel="icon" href="./images/logo.svg" />
+
+		<!-- Bootstrap -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+			crossorigin="anonymous"
+		/>
+		<link href="./stylesheets/style.css" rel="stylesheet" />
+	</head>
+
+	<body class="bg-dark d-grid" style="grid-template-rows: auto 1fr auto; min-height: 100vh">
+		<!-- Navbar Start -->
+		<nav class="navbar sticky-top navbar-expand navbar-dark bg-darker">
+			<div class="navbar-collapse collapse w-100 order-0 order-md-0">
+				<ul class="navbar-nav me-auto">
+					<li class="nav-item mx-3">
+						<a class="nav-link" href="./works.html" data-link>Works</a>
+					</li>
+				</ul>
+			</div>
+			<div class="mx-auto order-1">
+				<a class="navbar-brand mx-auto text-center" href="/" data-link>
+					<div class="row d-flex">
+						<div class="col">
+							<svg viewBox="-50 -50 500 500" xmlns="http://www.w3.org/2000/svg" width="40">
+								<path d="M200,0l-200,200l200,200l200,-200z" fill="none" stroke="white" stroke-width="50" />
+								<path d="M50,275l150,-150l150,150" fill="none" stroke="white" stroke-width="50" />
+								<path d="M50,125l150,150l150,-150" fill="none" stroke="white" stroke-width="50" />
+							</svg>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<h4 class="text-light mx-0 mt-1 mb-0">Athanasia</h4>
+						</div>
+					</div>
+					<div class="row text-right" style="margin-top: -8px">
+						<div class="col fs-6">
+							in
+							<img class="text-light mx-0 mb-0" src="./images/pages.svg" height="16" alt="" srcset="" />
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item mx-3">
+						<a class="nav-link" href="./about.html" data-link>About</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- CONTENT -->
+		<div class="container" id="content">
+			<div class="container my-4">
+				<div class="row">
+					<div class="col-md">
+						<div class="card p-3 mb-2 border-0 bg-dark">
+							<div class="d-flex justify-content-center mt-2 mb-0">
+								<h1 class="text-light text-center">Scalable Vector Graphic Animations</h1>
+							</div>
+							<div class="d-flex justify-content-center mt-5 mb-3">
+								<div class="d-flex flex-row align-items-center text-center">
+									<div class="text-light my-0 mx-3 col">
+										<h4>Animation:</h4>
+									</div>
+									<div class="dropdown dropdown-center d-flex col">
+										<button
+											class="btn btn-secondary btn-block dropdown-toggle bg-dark"
+											type="button"
+											id="selector"
+											data-bs-toggle="dropdown"
+											aria-expanded="false"
+										>
+											Select
+										</button>
+										<ul
+											class="dropdown-menu dropdown-menu-dark position-absolute"
+											id="selector-menu"
+											style="width: 20em"
+										>
+											<div class="row">
+												<div class="col-sm-6">
+													<ul class="list-unstyled">
+														<li>
+															<h6 class="dropdown-header text-center">Club</h6>
+														</li>
+														<li><a class="dropdown-item" href="#">SCHALE</a></li>
+													</ul>
+												</div>
+												<div class="col-sm-6">
+													<ul class="list-unstyled">
+														<li>
+															<h6 class="dropdown-header text-center">Halo</h6>
+														</li>
+														<li><a class="dropdown-item" href="#">Aris</a></li>
+														<li><a class="dropdown-item" href="#">Hibiki</a></li>
+														<li><a class="dropdown-item" href="#">Izuna</a></li>
+														<li><a class="dropdown-item" href="#">Kanna</a></li>
+														<li><a class="dropdown-item" href="#">Kazusa</a></li>
+														<li><a class="dropdown-item" href="#">Michiru</a></li>
+														<li><a class="dropdown-item" href="#">Mina</a></li>
+														<li><a class="dropdown-item" href="#">Minori</a></li>
+														<li><a class="dropdown-item" href="#">Momoi/Midori</a></li>
+														<li><a class="dropdown-item" href="#">Sakurako</a></li>
+														<li><a class="dropdown-item" href="#">Ui</a></li>
+													</ul>
+												</div>
+											</div>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="d-flex justify-content-center mt-5 mb-5">
+								<div class="d-flex flex-row align-items-center text-center">
+									<svg viewBox="0 0 340 340" xmlns="http://www.w3.org/2000/svg" class="w-100 d-none" id="Kanna">
+										<path
+											d="M155 105 l-35 -35l50 -50l50 50l-85 85"
+											fill="none"
+											stroke="white"
+											stroke-width="18"
+											pathLength="10"
+											stroke-dasharray="1000"
+										>
+											<animate
+												attributeName="stroke-dashoffset"
+												values="1990;2000;2990;3000"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.3;0.7;1"
+												keySplines="
+					0.45, 0, 0.55, 1;
+					0 0 1 1;
+					0.45, 0, 0.55, 1"
+												calcMode="spline"
+											/>
+										</path>
+										<path
+											d="M105 185 l-35 35l-50 -50l50 -50l85 85"
+											fill="none"
+											stroke="white"
+											stroke-width="18"
+											pathLength="10"
+											stroke-dasharray="1000"
+										>
+											<animate
+												attributeName="stroke-dashoffset"
+												values="1990;2000;2990;3000"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.3;0.7;1"
+												keySplines="
+					0.45, 0, 0.55, 1;
+					0 0 1 1;
+					0.45, 0, 0.55, 1"
+												calcMode="spline"
+											/>
+										</path>
+										<path
+											d="M185 235 l35 35l-50 50l-50 -50l85 -85"
+											fill="none"
+											stroke="white"
+											stroke-width="18"
+											pathLength="10"
+											stroke-dasharray="1000"
+										>
+											<animate
+												attributeName="stroke-dashoffset"
+												values="1990;2000;2990;3000"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.3;0.7;1"
+												keySplines="
+					0.45, 0, 0.55, 1;
+					0 0 1 1;
+					0.45, 0, 0.55, 1"
+												calcMode="spline"
+											/>
+										</path>
+										<path
+											d="M235 155 l35 -35l50 50l-50 50l-85 -85"
+											fill="none"
+											stroke="white"
+											stroke-width="18"
+											pathLength="10"
+											stroke-dasharray="1000"
+										>
+											<animate
+												attributeName="stroke-dashoffset"
+												values="1990;2000;2990;3000"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.3;0.7;1"
+												keySplines="
+					0.45, 0, 0.55, 1;
+					0 0 1 1;
+					0.45, 0, 0.55, 1"
+												calcMode="spline"
+											/>
+										</path>
+									</svg>
+									<svg viewBox="0 0 465 465" xmlns="http://www.w3.org/2000/svg" class="w-100 d-none" id="SCHALE">
+										<circle cx="50%" cy="50%" stroke="white" stroke-width="15" fill="none">
+											<animate
+												attributeName="r"
+												values="232.5;97.5;97.5;0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.18;0.8;1"
+												keySplines="
+												0.45, 0, 0.55, 1;
+												0.0 0.0 1 1;
+												0.45, 0, 0.55, 1"
+												calcMode="spline"
+											/>
+										</circle>
+										<circle cx="50%" cy="50%" r="110" stroke="white" stroke-width="3" fill="none">
+											<animate
+												attributeName="r"
+												values="0;110;110;0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.15;0.8;1"
+												keySplines="
+												0.45, 0, 0.55, 1;
+												0.0 0.0 1 1;
+												0.45, 0, 0.55, 1"
+												calcMode="spline"
+											/>
+										</circle>
+										<circle cx="50%" cy="50%" r="130" stroke="white" stroke-width="5" fill="none">
+											<animate
+												attributeName="r"
+												values="0;130;130;0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.1;0.8;1"
+												keySplines="
+												0.45, 0, 0.55, 1;
+												0.0 0.0 1 1;
+												0.45, 0, 0.55, 1"
+												calcMode="spline"
+											/>
+										</circle>
+										<mask id="mask">
+											<rect x="0" y="0" width="465" height="465" fill="white" />
+											<circle cx="50%" cy="50%" r="13" fill="black" />
+											<rect x="-50" y="-50" width="279.5" height="279.5" rx="42" />
+											<rect x="235.5" y="-50" width="279.5" height="279.5" rx="42" />
+											<rect x="235.5" y="235.5" width="279.5" height="279.5" rx="42" />
+											<rect x="-50" y="235.5" width="279.5" height="279.5" rx="42" />
+											<path d="M232.5 0 l-4 16 l-4 -17Z" fill="black" />
+											<path d="M232.5 0 l4 16 l4 -17Z" fill="black" />
+											<path d="M0 232.5 l16 -4 l-17 -4Z" fill="black" />
+											<path d="M0 232.5 l16 4 l-17 4Z" fill="black" />
+											<path d="M232.5 465 l-4 -16 l-4 17Z" fill="black" />
+											<path d="M232.5 465 l4 -16 l4 17Z" fill="black" />
+											<path d="M465 232.5 l-16 -4 l17 -4Z" fill="black" />
+											<path d="M465 232.5 l-16 4 l17 4Z" fill="black" />
+										</mask>
+
+										<circle cx="50%" cy="50%" fill="white" mask="url(#mask)">
+											<animate
+												attributeName="r"
+												values="0;232.5;232.5;0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.2;0.8;1"
+												keySplines="
+												0.45, 0, 0.55, 1;
+												0.0 0.0 1 1;
+												0.45, 0, 0.55, 1"
+												calcMode="spline"
+											/>
+										</circle>
+
+										<mask id="mask2">
+											<rect x="0" y="0" width="465" height="465" fill="black" />
+
+											<path d="M232.5 232.5 m46.669 46.669 l15 20 l5 -5Z" fill="white" />
+											<path d="M232.5 232.5 m-46.669 -46.669 l-15 -20 l-5 5Z" fill="white" />
+											<path d="M232.5 232.5 m-46.669 46.669 l-15 20 l-5 -5Z" fill="white" />
+											<path d="M232.5 232.5 m46.669 -46.669 l15 -20 l5 5Z" fill="white" />
+										</mask>
+										<circle cx="50%" cy="50%" r="87.5" fill="white" mask="url(#mask2)">
+											<animate
+												attributeName="r"
+												values="0;87.5;87.5;0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.2;0.8;1"
+												keySplines="
+												0.45, 0, 0.55, 1;
+												0.0 0.0 1 1;
+												0.45, 0, 0.55, 1"
+												calcMode="spline"
+											/>
+										</circle>
+
+										<mask id="mask3">
+											<rect x="0" y="0" width="465" height="465" fill="white" />
+											<ellipse cx="232.5" cy="67.5" rx="114" ry="25" fill="black">
+												<animate
+													attributeName="rx"
+													values="0;0;114;114;0"
+													dur="5s"
+													repeatCount="indefinite"
+													keyTimes="0;0.12;0.22;0.8;1"
+													keySplines="
+												0.0 0.0 1 1;
+												0.45, 0, 0.55, 1;
+												0.0 0.0 1 1;
+												0.45, 0, 0.55, 1"
+													calcMode="spline"
+												/>
+												<animate
+													attributeName="ry"
+													values="0;0;25;25;0"
+													dur="5s"
+													repeatCount="indefinite"
+													keyTimes="0;0.12;0.22;0.8;1"
+													keySplines="
+												0.0 0.0 1 1;
+												0.45, 0, 0.55, 1;
+												0.0 0.0 1 1;
+												0.45, 0, 0.55, 1"
+													calcMode="spline"
+												/>
+											</ellipse>
+										</mask>
+
+										<ellipse cx="232.5" cy="67.5" rx="148" ry="30" fill="white" mask="url(#mask3)">
+											<animate
+												attributeName="rx"
+												values="0;0;148;148;0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.1;0.2;0.8;1"
+												keySplines="
+												0.0 0.0 1 1;
+												0.45, 0, 0.55, 1;
+												0.0 0.0 1 1;
+												0.45, 0, 0.55, 1"
+												calcMode="spline"
+											/>
+											<animate
+												attributeName="ry"
+												values="0;0;30;30;0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.1;0.2;0.8;1"
+												keySplines="
+												0.0 0.0 1 1;
+												0.45, 0, 0.55, 1;
+												0.0 0.0 1 1;
+												0.45, 0, 0.55, 1"
+												calcMode="spline"
+											/>
+										</ellipse>
+									</svg>
+									<svg viewBox="-20 -20 440 440" xmlns="http://www.w3.org/2000/svg" class="w-100 d-none" id="Izuna">
+										<circle
+											cx="200"
+											cy="200"
+											r="200"
+											fill="none"
+											stroke="white"
+											stroke-width="20"
+											transform-origin="200 200"
+										>
+											<animateTransform
+												attributeName="transform"
+												attributeType="XML"
+												type="scale"
+												values="0;1;1;0"
+												keyTimes="0;0.15;0.8;1"
+												keySplines="
+													0.45, 0, 0.55, 1;
+													0 0 1 1;
+													0.45, 0, 0.55, 1"
+												calcMode="spline"
+												dur="5s"
+												repeatCount="indefinite"
+												additive="sum"
+											/>
+										</circle>
+										<path
+											d="M182.8,30l17.2,20l17.2,-20c0,0,67.8,43.8,-17.2,140.8c-85, -97,-17.2,-140.8,-17.2,-140.8z"
+											fill="none"
+											stroke="white"
+											stroke-width="20"
+											transform-origin="200 200"
+											transform="rotate(0)"
+										>
+											<animateTransform
+												attributeName="transform"
+												attributeType="XML"
+												type="rotate"
+												values="0;360;360;540"
+												keyTimes="0;0.3;0.7;1"
+												keySplines="
+													0.45, 0, 0.55, 1;
+													0 0 1 1;
+													0.45, 0, 0.55, 1;"
+												calcMode="spline"
+												dur="5s"
+												repeatCount="indefinite"
+											/>
+											<animateTransform
+												attributeName="transform"
+												attributeType="XML"
+												type="scale"
+												values="0;1;1;0"
+												keyTimes="0;0.15;0.8;1"
+												keySplines="
+													0.45, 0, 0.55, 1;
+													0 0 1 1;
+													0.45, 0, 0.55, 1"
+												calcMode="spline"
+												dur="5s"
+												repeatCount="indefinite"
+												additive="sum"
+											/>
+										</path>
+										<path
+											d="M182.8,30l17.2,20l17.2,-20c0,0,67.8,43.8,-17.2,140.8c-85,-97,-17.2,-140.8,-17.2,-140.8z"
+											fill="none"
+											stroke="white"
+											stroke-width="20"
+											transform-origin="200 200"
+											transform="rotate(72)"
+										>
+											<animateTransform
+												attributeName="transform"
+												attributeType="XML"
+												type="rotate"
+												values="72;432;432;612"
+												keyTimes="0;0.3;0.7;1"
+												keySplines="
+													0.45, 0, 0.55, 1;
+													0 0 1 1;
+													0.45, 0, 0.55, 1;"
+												calcMode="spline"
+												dur="5s"
+												repeatCount="indefinite"
+											/>
+											<animateTransform
+												attributeName="transform"
+												attributeType="XML"
+												type="scale"
+												values="0;1;1;0"
+												keyTimes="0;0.15;0.8;1"
+												keySplines="
+													0.45, 0, 0.55, 1;
+													0 0 1 1;
+													0.45, 0, 0.55, 1"
+												calcMode="spline"
+												dur="5s"
+												repeatCount="indefinite"
+												additive="sum"
+											/>
+										</path>
+										<path
+											d="M182.8,30l17.2,20l17.2,-20c0,0,67.8,43.8,-17.2,140.8c-85, -97,-17.2,-140.8,-17.2,-140.8z"
+											fill="none"
+											stroke="white"
+											stroke-width="20"
+											transform-origin="200 200"
+											transform="rotate(144)"
+										>
+											<animateTransform
+												attributeName="transform"
+												attributeType="XML"
+												type="rotate"
+												values="144;504;504;684"
+												keyTimes="0;0.3;0.7;1"
+												keySplines="
+													0.45, 0, 0.55, 1;
+													0 0 1 1;
+													0.45, 0, 0.55, 1;"
+												calcMode="spline"
+												dur="5s"
+												repeatCount="indefinite"
+											/>
+											<animateTransform
+												attributeName="transform"
+												attributeType="XML"
+												type="scale"
+												values="0;1;1;0"
+												keyTimes="0;0.15;0.8;1"
+												keySplines="
+													0.45, 0, 0.55, 1;
+													0 0 1 1;
+													0.45, 0, 0.55, 1"
+												calcMode="spline"
+												dur="5s"
+												repeatCount="indefinite"
+												additive="sum"
+											/>
+										</path>
+										<path
+											d="M182.8,30l17.2,20l17.2,-20c0,0,67.8,43.8,-17.2,140.8c-85, -97,-17.2,-140.8,-17.2,-140.8z"
+											fill="none"
+											stroke="white"
+											stroke-width="20"
+											transform-origin="200 200"
+											transform="rotate(216)"
+										>
+											<animateTransform
+												attributeName="transform"
+												attributeType="XML"
+												type="rotate"
+												values="216;576;576;756"
+												keyTimes="0;0.3;0.7;1"
+												keySplines="
+													0.45, 0, 0.55, 1;
+													0 0 1 1;
+													0.45, 0, 0.55, 1;"
+												calcMode="spline"
+												dur="5s"
+												repeatCount="indefinite"
+											/>
+											<animateTransform
+												attributeName="transform"
+												attributeType="XML"
+												type="scale"
+												values="0;1;1;0"
+												keyTimes="0;0.15;0.8;1"
+												keySplines="
+													0.45, 0, 0.55, 1;
+													0 0 1 1;
+													0.45, 0, 0.55, 1"
+												calcMode="spline"
+												dur="5s"
+												repeatCount="indefinite"
+												additive="sum"
+											/>
+										</path>
+										<path
+											d="M182.8,30l17.2,20l17.2,-20c0,0,67.8,43.8,-17.2,140.8c-85, -97,-17.2,-140.8,-17.2,-140.8z"
+											fill="none"
+											stroke="white"
+											stroke-width="20"
+											transform-origin="200 200"
+											transform="rotate(288)"
+										>
+											<animateTransform
+												attributeName="transform"
+												attributeType="XML"
+												type="rotate"
+												values="288;648;648;828"
+												keyTimes="0;0.3;0.7;1"
+												keySplines="
+													0.45, 0, 0.55, 1;
+													0 0 1 1;
+													0.45, 0, 0.55, 1;"
+												calcMode="spline"
+												dur="5s"
+												repeatCount="indefinite"
+											/>
+											<animateTransform
+												attributeName="transform"
+												attributeType="XML"
+												type="scale"
+												values="0;1;1;0"
+												keyTimes="0;0.15;0.8;1"
+												keySplines="
+													0.45, 0, 0.55, 1;
+													0 0 1 1;
+													0.45, 0, 0.55, 1"
+												calcMode="spline"
+												dur="5s"
+												repeatCount="indefinite"
+												additive="sum"
+											/>
+										</path>
+									</svg>
+									<svg viewBox="50 50 250 250" xmlns="http://www.w3.org/2000/svg" class="w-100 d-none" id="Kazusa">
+										<mask id="KazusaMask0">
+											<circle cx="175" cy="175" r="125" fill="white">
+												<animate
+													attributeName="r"
+													values="0;125;125;0"
+													dur="5s"
+													repeatCount="indefinite"
+													keyTimes="0;0.2;0.8;1"
+													keySplines="
+												0.45, 0, 0.55, 1;
+												0 0 1 1;
+												0.45, 0, 0.55, 1"
+													calcMode="spline"
+												/>
+											</circle>
+										</mask>
+
+										<circle
+											cx="175"
+											cy="175"
+											r="117.5"
+											fill="none"
+											stroke="white"
+											stroke-width="7.5"
+											mask="url(#KazusaMask0)"
+										>
+											<animate
+												attributeName="r"
+												values="0;117.5;117.5;0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.2;0.8;1"
+												keySplines="
+												0.45, 0, 0.55, 1;
+												0 0 1 1;
+												0.45, 0, 0.55, 1"
+												calcMode="spline"
+											/>
+										</circle>
+										<mask id="KazusaMask1">
+											<polygon points="175 90,167.5 125,182.5 125" fill="white" />
+										</mask>
+										<ellipse cx="175" cy="175" rx="1" ry="55" fill="white" mask="url(#KazusaMask1)">
+											<animate
+												attributeName="rx"
+												values="1;1;8;8;0;0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.1;0.2;0.8;0.9;1"
+												keySplines="
+												0.45, 0, 0.55, 1;
+												0.45, 0, 0.55, 1;
+												0 0 1 1;
+												0.45, 0, 0.55, 1;
+												0.45, 0, 0.55, 1"
+												calcMode="spline"
+											/>
+											<animate
+												attributeName="ry"
+												values="0;120;120;0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.2;0.9;1"
+												keySplines="
+												0.45, 0, 0.55, 1;
+												0 0 1 1;
+												0.45, 0, 0.55, 1"
+												calcMode="spline"
+											/>
+										</ellipse>
+										<ellipse
+											cx="175"
+											cy="175"
+											rx="55"
+											fill="none"
+											stroke="white"
+											stroke-width="7.5"
+											mask="url(#KazusaMask0)"
+										>
+											<animate
+												attributeName="ry"
+												values="1;51.25;51.25;0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.1;0.9;1"
+												keySplines="
+												0.45, 0, 0.55, 1;
+												0 0 1 1;
+												0.45, 0, 0.55, 1"
+												calcMode="spline"
+											/>
+											<animate
+												attributeName="rx"
+												values="1;1;51.25;51.25;1;0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.1;0.2;0.8;0.9;1"
+												keySplines="
+												0.45, 0, 0.55, 1;
+												0.45, 0, 0.55, 1;
+												0 0 1 1;
+												0.45, 0, 0.55, 1;
+												0.45, 0, 0.55, 1"
+												calcMode="spline"
+											/>
+										</ellipse>
+										<mask id="KazusaMask2">
+											<circle cx="175" cy="175" r="125" fill="white" />
+											<ellipse cx="175" cy="175" rx="3" ry="25" fill="black">
+												<animate
+													attributeName="ry"
+													values="0;0;25;25;0;0"
+													dur="5s"
+													repeatCount="indefinite"
+													keyTimes="0;0.2;0.3;0.7;0.8;1"
+													keySplines="
+												0 0 1 1;
+												0.45, 0, 0.55, 1;
+												0 0 1 1;
+												0.45, 0, 0.55, 1;
+												0 0 1 1"
+													calcMode="spline"
+												/>
+											</ellipse>
+										</mask>
+										<ellipse cx="175" cy="175" rx="35" ry="35" fill="white" mask="url(#KazusaMask2)">
+											<animate
+												attributeName="ry"
+												values="0;0;35;35;0;0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.2;0.3;0.7;0.8;1"
+												keySplines="
+												0 0 1 1;
+												0.45, 0, 0.55, 1;
+												0 0 1 1;
+												0.45, 0, 0.55, 1;
+												0 0 1 1"
+												calcMode="spline"
+											/>
+										</ellipse>
+									</svg>
+									<svg viewBox="40 40 270 270" xmlns="http://www.w3.org/2000/svg" class="w-100 d-none" id="Ui">
+										<circle cx="175" cy="175" r="125" fill="none" stroke="white" stroke-width="10">
+											<animate
+												attributeName="r"
+												values="0;125;125;0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.3;0.7;1"
+												keySplines="
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;
+												0.7, 0, 0.84, 0"
+												calcMode="spline"
+											/>
+										</circle>
+										<circle cx="175" cy="175" r="105" fill="none" stroke="white" stroke-width="5">
+											<animate
+												attributeName="r"
+												values="0;105;105;0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.3;0.7;1"
+												keySplines="
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;
+												0.7, 0, 0.84, 0"
+												calcMode="spline"
+											/>
+										</circle>
+										<circle cx="175" cy="175" r="72.5" fill="none" stroke="white" stroke-width="6">
+											<animate
+												attributeName="r"
+												values="135;72.5;72.5;0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.3;0.7;1"
+												keySplines="
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;
+												0.7, 0, 0.84, 0"
+												calcMode="spline"
+											/>
+										</circle>
+										<circle cx="175" cy="175" r="14" fill="none" stroke="white" stroke-width="6">
+											<animate
+												attributeName="r"
+												values="114;14;14;0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.3;0.7;1"
+												keySplines="
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;
+												0.7, 0, 0.84, 0"
+												calcMode="spline"
+											/>
+										</circle>
+
+										<path d="M175,50l0,20" fill="none" stroke="white" stroke-width="8" transform-origin="175 175">
+											<animate
+												attributeName="d"
+												values="M175,175l0,0;M175,50l0,20;M175,50l0,20;M175,175l0,0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.3;0.7;1"
+												keySplines="
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;
+												0.7, 0, 0.84, 0"
+												calcMode="spline"
+											/>
+											<animateTransform
+												attributeName="transform"
+												attributeType="XML"
+												type="rotate"
+												values="0;720;720;1080"
+												keyTimes="0;0.3;0.7;1"
+												keySplines="
+													0.16, 1, 0.3, 1;
+													0 0 1 1;
+													0.7, 0, 0.84, 0;"
+												calcMode="spline"
+												dur="5s"
+												repeatCount="indefinite"
+											/>
+										</path>
+										<path d="M175,50l0,20" fill="none" stroke="white" stroke-width="8" transform-origin="175 175">
+											<animate
+												attributeName="d"
+												values="M175,175l0,0;M175,50l0,20;M175,50l0,20;M175,175l0,0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.3;0.7;1"
+												keySplines="
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;
+												0.7, 0, 0.84, 0"
+												calcMode="spline"
+											/>
+											<animateTransform
+												attributeName="transform"
+												attributeType="XML"
+												type="rotate"
+												values="90;810;810;1170"
+												keyTimes="0;0.3;0.7;1"
+												keySplines="
+													0.16, 1, 0.3, 1;
+													0 0 1 1;
+													0.7, 0, 0.84, 0;"
+												calcMode="spline"
+												dur="5s"
+												repeatCount="indefinite"
+											/>
+										</path>
+										<path d="M175,50l0,20" fill="none" stroke="white" stroke-width="8" transform-origin="175 175">
+											<animate
+												attributeName="d"
+												values="M175,175l0,0;M175,50l0,20;M175,50l0,20;M175,175l0,0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.3;0.7;1"
+												keySplines="
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;
+												0.7, 0, 0.84, 0"
+												calcMode="spline"
+											/>
+											<animateTransform
+												attributeName="transform"
+												attributeType="XML"
+												type="rotate"
+												values="180;900;900;1260"
+												keyTimes="0;0.3;0.7;1"
+												keySplines="
+													0.16, 1, 0.3, 1;
+													0 0 1 1;
+													0.7, 0, 0.84, 0;"
+												calcMode="spline"
+												dur="5s"
+												repeatCount="indefinite"
+											/>
+										</path>
+										<path d="M175,50l0,20" fill="none" stroke="white" stroke-width="8" transform-origin="175 175">
+											<animate
+												attributeName="d"
+												values="M175,175l0,0;M175,50l0,20;M175,50l0,20;M175,175l0,0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.3;0.7;1"
+												keySplines="
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;
+												0.7, 0, 0.84, 0"
+												calcMode="spline"
+											/>
+											<animateTransform
+												attributeName="transform"
+												attributeType="XML"
+												type="rotate"
+												values="270;990;990;1350"
+												keyTimes="0;0.3;0.7;1"
+												keySplines="
+													0.16, 1, 0.3, 1;
+													0 0 1 1;
+													0.7, 0, 0.84, 0;"
+												calcMode="spline"
+												dur="5s"
+												repeatCount="indefinite"
+											/>
+										</path>
+
+										<path d="M175,102.5l0,58.5" fill="none" stroke="white" stroke-width="8" transform-origin="175 175">
+											<animate
+												attributeName="d"
+												values="M175,40l0,21;M175,102.5l0,58.5;M175,102.5l0,58.5;M175,175l0,0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.3;0.7;1"
+												keySplines="
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;
+												0.7, 0, 0.84, 0"
+												calcMode="spline"
+											/>
+											<animateTransform
+												attributeName="transform"
+												attributeType="XML"
+												type="rotate"
+												values="0;1080;1080;1800"
+												keyTimes="0;0.4;0.7;1"
+												keySplines="
+													0.5, 1, 0.89, 1;
+													0 0 1 1;
+													0.7, 0, 0.84, 0;"
+												calcMode="spline"
+												dur="5s"
+												repeatCount="indefinite"
+											/>
+										</path>
+										<path d="M175,102.5l0,58.5" fill="none" stroke="white" stroke-width="8" transform-origin="175 175">
+											<animate
+												attributeName="d"
+												values="M175,40l0,21;M175,102.5l0,58.5;M175,102.5l0,58.5;M175,175l0,0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.3;0.7;1"
+												keySplines="
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;
+												0.7, 0, 0.84, 0"
+												calcMode="spline"
+											/>
+											<animateTransform
+												attributeName="transform"
+												attributeType="XML"
+												type="rotate"
+												values="720;1170;1170;1410"
+												keyTimes="0;0.4;0.7;1"
+												keySplines="
+													0.5, 1, 0.89, 1;
+													0 0 1 1;
+													0.7, 0, 0.84, 0;"
+												calcMode="spline"
+												dur="5s"
+												repeatCount="indefinite"
+											/>
+										</path>
+									</svg>
+									<svg viewBox="30 30 300 300" xmlns="http://www.w3.org/2000/svg" class="w-100 d-none" id="Aris">
+										<path d="M50,58l165,0l0,165l-165,0z" fill="none" stroke="white" stroke-width="25">
+											<animate
+												attributeName="d"
+												values="
+												M132.5,140.5l0,0l0,0l0,0z;
+												M132.5,140.5l0,0l0,0l0,0z;
+												M50,58l165,0l0,165l-165,0z;
+												M50,58l165,0l0,165l-165,0z;
+												M132.5,140.5l0,0l0,0l0,0z"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.05;0.25;0.8;1"
+												keySplines="
+												0.0 0.0 1 1;
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;
+												0.7, 0, 0.84, 0"
+												calcMode="spline"
+											/>
+										</path>
+										<path d="M172,110l135,0l0,142l-135,0z" fill="none" stroke="white" stroke-width="20">
+											<animate
+												attributeName="d"
+												values="
+												M239.5,177.5l0,0l0,0l0,0z;
+												M239.5,177.5l0,0l0,0l0,0z;
+												M172,110l135,0l0,142l-135,0z;
+												M172,110l135,0l0,142l-135,0z;
+												M239.5,177.5l0,0l0,0l0,0z;
+												M239.5,177.5l0,0l0,0l0,0z"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.025;0.225;0.775;0.975;1"
+												keySplines="
+												0.0 0.0 1 1;
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;
+												0.7, 0, 0.84, 0;
+												0.0 0.0 1 1;"
+												calcMode="spline"
+											/>
+										</path>
+										<path d="M88,200l98,0l0,100l-98,0z" fill="none" stroke="white" stroke-width="15">
+											<animate
+												attributeName="d"
+												values="
+												M137,250l0,0l0,0l0,0z;
+												M88,200l98,0l0,100l-98,0z;
+												M88,200l98,0l0,100l-98,0z;
+												M137,250l0,0l0,0l0,0z;
+												M137,250l0,0l0,0l0,0z;"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.2;0.75;0.95;1"
+												keySplines="
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;
+												0.7, 0, 0.84, 0;
+												0.0 0.0 1 1;"
+												calcMode="spline"
+											/>
+										</path>
+										<path d="M250,64l45,0l0,22l-45,0z" fill="none" stroke="white" stroke-width="15">
+											<animate
+												attributeName="d"
+												values="
+												M272.5,75l0,0l0,0l0,0z;
+												M272.5,75l0,0l0,0l0,0z;
+												M250,64l45,0l0,22l-45,0z;
+												M250,64l45,0l0,22l-45,0z;
+												M272.5,75l0,0l0,0l0,0z;
+												M272.5,75l0,0l0,0l0,0z;"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.1;0.3;0.725;0.925;1"
+												keySplines="
+												0.0 0.0 1 1;
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;
+												0.7, 0, 0.84, 0;
+												0.0 0.0 1 1;"
+												calcMode="spline"
+											/>
+										</path>
+										<path d="M131,64l51,0l0,16l-51,0z" fill="white">
+											<animate
+												attributeName="d"
+												values="
+												M156.5,72l0,0l0,0l0,0z;
+												M156.5,72l0,0l0,0l0,0z;
+												M131,64l51,0l0,16l-51,0z;
+												M131,64l51,0l0,16l-51,0z;
+												M156.5,72l0,0l0,0l0,0z;
+												M156.5,72l0,0l0,0l0,0z;"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.125;0.325;0.7;0.9;1"
+												keySplines="
+												0.0 0.0 1 1;
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;
+												0.7, 0, 0.84, 0;
+												0.0 0.0 1 1;"
+												calcMode="spline"
+											/>
+										</path>
+									</svg>
+									<svg viewBox="0 0 350 350" xmlns="http://www.w3.org/2000/svg" class="w-100 d-none" id="Momoi/Midori">
+										<path
+											d="M175,148c-5,10,-12,19,-23,27c14,17,23,60,23,90c0,-30,9,-73,23,-90c-11,-8,-18,-17,-23,-27"
+											fill="white"
+											transform-origin="175 175"
+											transform="rotate(0)"
+										>
+											<animate
+												attributeName="d"
+												values="
+												M175,148c-5,10,-12,19,-23,27c11,8,18,17,23,27c5,-10,12,-19,23,-27c-11,-8,-18,-17,-23,-27;
+												M175,148c-5,10,-12,19,-23,27c11,8,18,17,23,27c5,-10,12,-19,23,-27c-11,-8,-18,-17,-23,-27;
+												M175,148c-5,10,-12,19,-23,27c14,17,23,60,23,90c0,-30,9,-73,23,-90c-11,-8,-18,-17,-23,-27;
+												M175,148c-5,10,-12,19,-23,27c14,17,23,60,23,90c0,-30,9,-73,23,-90c-11,-8,-18,-17,-23,-27;
+												M175,148c-5,10,-12,19,-23,27c11,8,18,17,23,27c5,-10,12,-19,23,-27c-11,-8,-18,-17,-23,-27;
+												M175,148c-5,10,-12,19,-23,27c11,8,18,17,23,27c5,-10,12,-19,23,-27c-11,-8,-18,-17,-23,-27"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.15;0.3;0.7;0.85;1"
+												keySplines="
+												0.0 0.0 1 1;
+												0.45, 0, 0.55, 1;
+												0.0 0.0 1 1;
+												0.45, 0, 0.55, 1;
+												0.0 0.0 1 1"
+												calcMode="spline"
+											/>
+											<animateTransform
+												attributeName="transform"
+												attributeType="XML"
+												type="scale"
+												values="0;1;1;0"
+												keyTimes="0;0.15;0.9;1"
+												keySplines="
+													0.45, 0, 0.55, 1;
+													0 0 1 1;
+													0.45, 0, 0.55, 1"
+												calcMode="spline"
+												dur="5s"
+												repeatCount="indefinite"
+												additive="sum"
+											/>
+											<animateTransform
+												attributeName="transform"
+												attributeType="XML"
+												type="translate"
+												values="0 0;0 0;0 -125;0 -125;0 0;0 0"
+												keyTimes="0;0.15;0.3;0.7;0.85;1"
+												keySplines="
+													0 0 1 1;
+													0.45, 0, 0.55, 1;
+													0 0 1 1;
+													0.45, 0, 0.55, 1;
+													0 0 1 1"
+												calcMode="spline"
+												dur="5s"
+												repeatCount="indefinite"
+												additive="sum"
+											/>
+										</path>
+										<path
+											d="M175,148c-5,10,-12,19,-23,27c14,17,23,60,23,90c0,-30,9,-73,23,-90c-11,-8,-18,-17,-23,-27"
+											fill="white"
+											transform-origin="175 175"
+											transform="rotate(90)"
+										>
+											<animate
+												attributeName="d"
+												values="
+												M175,148c-5,10,-12,19,-23,27c11,8,18,17,23,27c5,-10,12,-19,23,-27c-11,-8,-18,-17,-23,-27;
+												M175,148c-5,10,-12,19,-23,27c11,8,18,17,23,27c5,-10,12,-19,23,-27c-11,-8,-18,-17,-23,-27;
+												M175,148c-5,10,-12,19,-23,27c14,17,23,60,23,90c0,-30,9,-73,23,-90c-11,-8,-18,-17,-23,-27;
+												M175,148c-5,10,-12,19,-23,27c14,17,23,60,23,90c0,-30,9,-73,23,-90c-11,-8,-18,-17,-23,-27;
+												M175,148c-5,10,-12,19,-23,27c11,8,18,17,23,27c5,-10,12,-19,23,-27c-11,-8,-18,-17,-23,-27;
+												M175,148c-5,10,-12,19,-23,27c11,8,18,17,23,27c5,-10,12,-19,23,-27c-11,-8,-18,-17,-23,-27"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.15;0.3;0.7;0.85;1"
+												keySplines="
+												0.0 0.0 1 1;
+												0.45, 0, 0.55, 1;
+												0.0 0.0 1 1;
+												0.45, 0, 0.55, 1;
+												0.0 0.0 1 1"
+												calcMode="spline"
+											/>
+											<animateTransform
+												attributeName="transform"
+												attributeType="XML"
+												type="scale"
+												values="0;1;1;0"
+												keyTimes="0;0.15;0.9;1"
+												keySplines="
+													0.45, 0, 0.55, 1;
+													0 0 1 1;
+													0.45, 0, 0.55, 1"
+												calcMode="spline"
+												dur="5s"
+												repeatCount="indefinite"
+												additive="sum"
+											/>
+											<animateTransform
+												attributeName="transform"
+												attributeType="XML"
+												type="translate"
+												values="0 0;0 0;0 -125;0 -125;0 0;0 0"
+												keyTimes="0;0.15;0.3;0.7;0.85;1"
+												keySplines="
+													0 0 1 1;
+													0.45, 0, 0.55, 1;
+													0 0 1 1;
+													0.45, 0, 0.55, 1;
+													0 0 1 1"
+												calcMode="spline"
+												dur="5s"
+												repeatCount="indefinite"
+												additive="sum"
+											/>
+										</path>
+										<path
+											d="M175,148c-5,10,-12,19,-23,27c14,17,23,60,23,90c0,-30,9,-73,23,-90c-11,-8,-18,-17,-23,-27"
+											fill="white"
+											transform-origin="175 175"
+											transform="rotate(180)"
+										>
+											<animate
+												attributeName="d"
+												values="
+												M175,148c-5,10,-12,19,-23,27c11,8,18,17,23,27c5,-10,12,-19,23,-27c-11,-8,-18,-17,-23,-27;
+												M175,148c-5,10,-12,19,-23,27c11,8,18,17,23,27c5,-10,12,-19,23,-27c-11,-8,-18,-17,-23,-27;
+												M175,148c-5,10,-12,19,-23,27c14,17,23,60,23,90c0,-30,9,-73,23,-90c-11,-8,-18,-17,-23,-27;
+												M175,148c-5,10,-12,19,-23,27c14,17,23,60,23,90c0,-30,9,-73,23,-90c-11,-8,-18,-17,-23,-27;
+												M175,148c-5,10,-12,19,-23,27c11,8,18,17,23,27c5,-10,12,-19,23,-27c-11,-8,-18,-17,-23,-27;
+												M175,148c-5,10,-12,19,-23,27c11,8,18,17,23,27c5,-10,12,-19,23,-27c-11,-8,-18,-17,-23,-27"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.15;0.3;0.7;0.85;1"
+												keySplines="
+												0.0 0.0 1 1;
+												0.45, 0, 0.55, 1;
+												0.0 0.0 1 1;
+												0.45, 0, 0.55, 1;
+												0.0 0.0 1 1"
+												calcMode="spline"
+											/>
+											<animateTransform
+												attributeName="transform"
+												attributeType="XML"
+												type="scale"
+												values="0;1;1;0"
+												keyTimes="0;0.15;0.9;1"
+												keySplines="
+													0.45, 0, 0.55, 1;
+													0 0 1 1;
+													0.45, 0, 0.55, 1"
+												calcMode="spline"
+												dur="5s"
+												repeatCount="indefinite"
+												additive="sum"
+											/>
+											<animateTransform
+												attributeName="transform"
+												attributeType="XML"
+												type="translate"
+												values="0 0;0 0;0 -125;0 -125;0 0;0 0"
+												keyTimes="0;0.15;0.3;0.7;0.85;1"
+												keySplines="
+													0 0 1 1;
+													0.45, 0, 0.55, 1;
+													0 0 1 1;
+													0.45, 0, 0.55, 1;
+													0 0 1 1"
+												calcMode="spline"
+												dur="5s"
+												repeatCount="indefinite"
+												additive="sum"
+											/>
+										</path>
+										<path
+											d="M175,148c-5,10,-12,19,-23,27c14,17,23,60,23,90c0,-30,9,-73,23,-90c-11,-8,-18,-17,-23,-27"
+											fill="white"
+											transform-origin="175 175"
+											transform="rotate(270)"
+										>
+											<animate
+												attributeName="d"
+												values="
+												M175,148c-5,10,-12,19,-23,27c11,8,18,17,23,27c5,-10,12,-19,23,-27c-11,-8,-18,-17,-23,-27;
+												M175,148c-5,10,-12,19,-23,27c11,8,18,17,23,27c5,-10,12,-19,23,-27c-11,-8,-18,-17,-23,-27;
+												M175,148c-5,10,-12,19,-23,27c14,17,23,60,23,90c0,-30,9,-73,23,-90c-11,-8,-18,-17,-23,-27;
+												M175,148c-5,10,-12,19,-23,27c14,17,23,60,23,90c0,-30,9,-73,23,-90c-11,-8,-18,-17,-23,-27;
+												M175,148c-5,10,-12,19,-23,27c11,8,18,17,23,27c5,-10,12,-19,23,-27c-11,-8,-18,-17,-23,-27;
+												M175,148c-5,10,-12,19,-23,27c11,8,18,17,23,27c5,-10,12,-19,23,-27c-11,-8,-18,-17,-23,-27"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.15;0.3;0.7;0.85;1"
+												keySplines="
+												0.0 0.0 1 1;
+												0.45, 0, 0.55, 1;
+												0.0 0.0 1 1;
+												0.45, 0, 0.55, 1;
+												0.0 0.0 1 1"
+												calcMode="spline"
+											/>
+											<animateTransform
+												attributeName="transform"
+												attributeType="XML"
+												type="scale"
+												values="0;1;1;0"
+												keyTimes="0;0.15;0.9;1"
+												keySplines="
+													0.45, 0, 0.55, 1;
+													0 0 1 1;
+													0.45, 0, 0.55, 1"
+												calcMode="spline"
+												dur="5s"
+												repeatCount="indefinite"
+												additive="sum"
+											/>
+											<animateTransform
+												attributeName="transform"
+												attributeType="XML"
+												type="translate"
+												values="0 0;0 0;0 -125;0 -125;0 0;0 0"
+												keyTimes="0;0.15;0.3;0.7;0.85;1"
+												keySplines="
+													0 0 1 1;
+													0.45, 0, 0.55, 1;
+													0 0 1 1;
+													0.45, 0, 0.55, 1;
+													0 0 1 1"
+												calcMode="spline"
+												dur="5s"
+												repeatCount="indefinite"
+												additive="sum"
+											/>
+										</path>
+
+										<circle cx="175" cy="175" r="126.5" fill="none" stroke="white" stroke-width="9">
+											<animate
+												attributeName="r"
+												values="0;0;126.5;126.5;0;0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.15;0.3;0.7;0.85;1"
+												keySplines="
+												0.0 0.0 1 1;
+												0.45, 0, 0.55, 1;
+												0.0 0.0 1 1;
+												0.45, 0, 0.55, 1;
+												0.0 0.0 1 1;"
+												calcMode="spline"
+											/>
+										</circle>
+										<circle cx="175" cy="175" r="99" fill="none" stroke="white" stroke-width="8">
+											<animate
+												attributeName="r"
+												values="0;0;99;99;0;0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.15;0.3;0.7;0.85;1"
+												keySplines="
+												0.0 0.0 1 1;
+												0.45, 0, 0.55, 1;
+												0.0 0.0 1 1;
+												0.45, 0, 0.55, 1;
+												0.0 0.0 1 1;"
+												calcMode="spline"
+											/>
+										</circle>
+									</svg>
+									<svg viewBox="0 0 350 350" xmlns="http://www.w3.org/2000/svg" class="w-100 d-none" id="Hibiki">
+										<circle cx="175" cy="175" r="129" fill="none" stroke="white" stroke-width="17">
+											<animate
+												attributeName="r"
+												values="0;129;129;0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.3;0.7;1"
+												keySplines="
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;
+												0.7, 0, 0.84, 0"
+												calcMode="spline"
+											/>
+										</circle>
+										<circle cx="175" cy="175" r="107" fill="none" stroke="white" stroke-width="10">
+											<animate
+												attributeName="r"
+												values="0;107;107;0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.2;0.7;1"
+												keySplines="
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;
+												0.7, 0, 0.84, 0"
+												calcMode="spline"
+											/>
+										</circle>
+										<circle cx="175" cy="175" r="30" fill="none" stroke="white" stroke-width="9">
+											<animate
+												attributeName="r"
+												values="0;30;30;0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.2;0.7;1"
+												keySplines="
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;
+												0.7, 0, 0.84, 0"
+												calcMode="spline"
+											/>
+										</circle>
+										<path
+											d="M196.21320343559643,153.78679656440357l-42.42640687119285,42.42640687119285"
+											stroke="white"
+											stroke-width="9"
+											transform-origin="175 175"
+										>
+											<animateTransform
+												attributeName="transform"
+												attributeType="XML"
+												type="rotate"
+												values="45;45;0;0;540"
+												keyTimes="0;0.1;0.2;0.7;1"
+												keySplines="
+													0 0 1 1;
+													0.45, 0, 0.55, 1;
+													0 0 1 1;
+													0.5, 0, 0.75, 0;"
+												calcMode="spline"
+												dur="5s"
+												repeatCount="indefinite"
+											/>
+											<animate
+												attributeName="d"
+												values="
+												M175,175l0,0;
+												M196.21320343559643,153.78679656440357l-42.42640687119285,42.42640687119285;
+												M196.21320343559643,153.78679656440357l-42.42640687119285,42.42640687119285;
+												M175,175l0,0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.3;0.7;1"
+												keySplines="
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;
+												0.7, 0, 0.84, 0"
+												calcMode="spline"
+											/>
+										</path>
+									</svg>
+									<svg viewBox="40 40 270 270" xmlns="http://www.w3.org/2000/svg" class="w-100 d-none" id="Minori">
+										<circle cx="175" cy="175" r="57" fill="none" stroke="white" stroke-width="9">
+											<animate
+												attributeName="r"
+												values="0;57;57;0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.15;0.85;1"
+												keySplines="
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;
+												0.7, 0, 0.84, 0"
+												calcMode="spline"
+											/>
+										</circle>
+										<circle
+											cx="175"
+											cy="175"
+											r="81"
+											fill="none"
+											stroke="white"
+											stroke-width="6"
+											stroke-dasharray="103.2 302.53"
+										>
+											<animate
+												attributeName="stroke-dasharray"
+												values="0 509;0 509;103.2 302.53;103.2 302.53;0 509;0 509"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.1;0.3;0.7;0.85;1"
+												keySplines="
+												0.0 0.0 1 1;
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;
+												0.7, 0, 0.84, 0;
+												0.0 0.0 1 1;"
+												calcMode="spline"
+											/>
+										</circle>
+										<circle
+											cx="175"
+											cy="175"
+											r="97"
+											fill="none"
+											stroke="white"
+											stroke-width="15"
+											stroke-dasharray="0 609.46"
+										>
+											<animate
+												attributeName="stroke-dasharray"
+												values="0 610;0 610;123.6 362.3;123.6 362.3;0 610;0 610"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.1;0.3;0.7;0.85;1"
+												keySplines="
+												0.0 0.0 1 1;
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;
+												0.7, 0, 0.84, 0;
+												0.0 0.0 1 1;"
+												calcMode="spline"
+											/>
+										</circle>
+										<circle
+											cx="175"
+											cy="175"
+											r="81"
+											fill="none"
+											stroke="white"
+											stroke-width="6"
+											stroke-dasharray="103.2 302.53"
+											transform-origin="175 175"
+											transform="scale(-1,1)"
+										>
+											<animate
+												attributeName="stroke-dasharray"
+												values="0 509;0 509;103.2 302.53;103.2 302.53;0 509;0 509"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.1;0.3;0.7;0.85;1"
+												keySplines="
+												0.0 0.0 1 1;
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;
+												0.7, 0, 0.84, 0;
+												0.0 0.0 1 1;"
+												calcMode="spline"
+											/>
+										</circle>
+										<circle
+											cx="175"
+											cy="175"
+											r="97"
+											fill="none"
+											stroke="white"
+											stroke-width="15"
+											stroke-dasharray="0 609.46"
+											transform-origin="175 175"
+											transform="scale(-1,1)"
+										>
+											<animate
+												attributeName="stroke-dasharray"
+												values="0 610;0 610;123.6 362.3;123.6 362.3;0 610;0 610"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.1;0.3;0.7;0.85;1"
+												keySplines="
+												0.0 0.0 1 1;
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;
+												0.7, 0, 0.84, 0;
+												0.0 0.0 1 1;"
+												calcMode="spline"
+											/>
+										</circle>
+
+										<!--Fading-->
+										<line
+											x1="243"
+											y1="175"
+											x2="307"
+											y2="175"
+											stroke="white"
+											stroke-width="16"
+											transform-origin="175 175"
+											transform="rotate(0)"
+										>
+											<animate
+												attributeName="x1"
+												values="232;232;243;243;232;232"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.1;0.1;0.85;0.85;1"
+												keySplines="
+												0.0 0.0 1 1;
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;"
+												calcMode="spline"
+											/>
+											<animate
+												attributeName="x2"
+												values="232;232;307;307;232"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.05;0.15;0.85;1"
+												keySplines="
+												0.0 0.0 1 1;
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;
+												0.16, 1, 0.3, 1;"
+												calcMode="spline"
+											/>
+										</line>
+										<line
+											x1="243"
+											y1="175"
+											x2="307"
+											y2="175"
+											stroke="white"
+											stroke-width="16"
+											transform-origin="175 175"
+											transform="rotate(45)"
+										>
+											<animate
+												attributeName="opacity"
+												values="0;0;1;1;0;0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.12;0.22;0.82;0.9;1"
+												keySplines="
+												0.0 0.0 1 1;
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;"
+												calcMode="spline"
+											/>
+										</line>
+										<line
+											x1="243"
+											y1="175"
+											x2="307"
+											y2="175"
+											stroke="white"
+											stroke-width="16"
+											transform-origin="175 175"
+											transform="rotate(135)"
+										>
+											<animate
+												attributeName="opacity"
+												values="0;0;1;1;0;0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.12;0.22;0.82;0.9;1"
+												keySplines="
+												0.0 0.0 1 1;
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;"
+												calcMode="spline"
+											/>
+										</line>
+										<line
+											x1="243"
+											y1="175"
+											x2="307"
+											y2="175"
+											stroke="white"
+											stroke-width="16"
+											transform-origin="175 175"
+											transform="rotate(180)"
+										>
+											<animate
+												attributeName="x1"
+												values="232;232;243;243;232;232"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.1;0.1;0.85;0.85;1"
+												keySplines="
+												0.0 0.0 1 1;
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;"
+												calcMode="spline"
+											/>
+											<animate
+												attributeName="x2"
+												values="232;232;307;307;232"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.05;0.15;0.85;1"
+												keySplines="
+												0.0 0.0 1 1;
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;
+												0.16, 1, 0.3, 1;"
+												calcMode="spline"
+											/>
+										</line>
+										<line
+											x1="243"
+											y1="175"
+											x2="307"
+											y2="175"
+											stroke="white"
+											stroke-width="16"
+											transform-origin="175 175"
+											transform="rotate(225)"
+										>
+											<animate
+												attributeName="opacity"
+												values="0;0;1;1;0;0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.12;0.22;0.82;0.9;1"
+												keySplines="
+												0.0 0.0 1 1;
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;"
+												calcMode="spline"
+											/>
+										</line>
+										<line
+											x1="243"
+											y1="175"
+											x2="307"
+											y2="175"
+											stroke="white"
+											stroke-width="16"
+											transform-origin="175 175"
+											transform="rotate(315)"
+										>
+											<animate
+												attributeName="opacity"
+												values="0;0;1;1;0;0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.12;0.22;0.82;0.9;1"
+												keySplines="
+												0.0 0.0 1 1;
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;"
+												calcMode="spline"
+											/>
+										</line>
+
+										<!--Rotating-->
+										<line
+											x1="232"
+											y1="175"
+											x2="292"
+											y2="175"
+											stroke="white"
+											stroke-width="10"
+											transform-origin="175 175"
+											transform="rotate(73)"
+										>
+											<animateTransform
+												attributeName="transform"
+												attributeType="XML"
+												type="rotate"
+												values="0;0;73;73;0;0"
+												keyTimes="0;0.1;0.3;0.7;0.85;1"
+												keySplines="
+													0 0 1 1;
+													0.16, 1, 0.3, 1;
+													0 0 1 1;
+													0.7, 0, 0.84, 0;
+													0 0 1 1;"
+												calcMode="spline"
+												dur="5s"
+												repeatCount="indefinite"
+											/>
+											<animate
+												attributeName="opacity"
+												values="0;1;1;0;0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.1;0.7;0.85;1"
+												calcMode="discrete"
+											/>
+										</line>
+										<line
+											x1="232"
+											y1="175"
+											x2="292"
+											y2="175"
+											stroke="white"
+											stroke-width="10"
+											transform-origin="175 175"
+											transform="rotate(107)"
+										>
+											<animateTransform
+												attributeName="transform"
+												attributeType="XML"
+												type="rotate"
+												values="180;180;107;107;180;180"
+												keyTimes="0;0.1;0.3;0.7;0.85;1"
+												keySplines="
+													0 0 1 1;
+													0.16, 1, 0.3, 1;
+													0 0 1 1;
+													0.7, 0, 0.84, 0;
+													0 0 1 1;"
+												calcMode="spline"
+												dur="5s"
+												repeatCount="indefinite"
+											/>
+											<animate
+												attributeName="opacity"
+												values="0;1;1;0;0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.1;0.7;0.85;1"
+												calcMode="discrete"
+											/>
+										</line>
+										<line
+											x1="232"
+											y1="175"
+											x2="292"
+											y2="175"
+											stroke="white"
+											stroke-width="10"
+											transform-origin="175 175"
+											transform="rotate(253)"
+										>
+											<animateTransform
+												attributeName="transform"
+												attributeType="XML"
+												type="rotate"
+												values="180;180;253;253;180;180"
+												keyTimes="0;0.1;0.3;0.7;0.85;1"
+												keySplines="
+													0 0 1 1;
+													0.16, 1, 0.3, 1;
+													0 0 1 1;
+													0.7, 0, 0.84, 0;
+													0 0 1 1;"
+												calcMode="spline"
+												dur="5s"
+												repeatCount="indefinite"
+											/>
+											<animate
+												attributeName="opacity"
+												values="0;1;1;0;0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.1;0.7;0.85;1"
+												calcMode="discrete"
+											/>
+										</line>
+										<line
+											x1="232"
+											y1="175"
+											x2="292"
+											y2="175"
+											stroke="white"
+											stroke-width="10"
+											transform-origin="175 175"
+											transform="rotate(287)"
+										>
+											<animateTransform
+												attributeName="transform"
+												attributeType="XML"
+												type="rotate"
+												values="360;360;287;287;360;360"
+												keyTimes="0;0.1;0.3;0.7;0.85;1"
+												keySplines="
+													0 0 1 1;
+													0.16, 1, 0.3, 1;
+													0 0 1 1;
+													0.7, 0, 0.84, 0;
+													0 0 1 1;"
+												calcMode="spline"
+												dur="5s"
+												repeatCount="indefinite"
+											/>
+											<animate
+												attributeName="opacity"
+												values="0;1;1;0;0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.1;0.7;0.85;1"
+												calcMode="discrete"
+											/>
+										</line>
+									</svg>
+									<svg viewBox="35 35 280 280" xmlns="http://www.w3.org/2000/svg" class="w-100 d-none" id="Mina">
+										<mask id="MinaMask1">
+											<circle cx="175" cy="175" r="200" fill="white" />
+											<circle cx="169" cy="156" r="38" fill="black">
+												<animate
+													attributeName="r"
+													values="0;0;38;38;0;0"
+													dur="5s"
+													repeatCount="indefinite"
+													keyTimes="0;0.1;0.3;0.7;0.8;1"
+													keySplines="
+													0.0 0.0 1 1;
+													0.16, 1, 0.3, 1;
+													0.0 0.0 1 1;
+													0.7, 0, 0.84, 0;
+													0.0 0.0 1 1;"
+													calcMode="spline"
+												/>
+											</circle>
+										</mask>
+										<circle cx="175" cy="175" r="64" fill="white" mask="url(#MinaMask1)">
+											<animate
+												attributeName="r"
+												values="0;64;64;0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.3;0.7;1"
+												keySplines="
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;
+												0.7, 0, 0.84, 0"
+												calcMode="spline"
+											/>
+										</circle>
+										<circle cx="175" cy="175" r="112.5" fill="none" stroke="white" stroke-width="31">
+											<animate
+												attributeName="r"
+												values="0;112.5;112.5;0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.2;0.8;1"
+												keySplines="
+												0.16, 1, 0.3, 1;
+												0.0 0.0 1 1;
+												0.7, 0, 0.84, 0"
+												calcMode="spline"
+											/>
+										</circle>
+									</svg>
+									<svg viewBox="35 35 280 280" xmlns="http://www.w3.org/2000/svg" class="w-100 d-none" id="Michiru">
+										<mask id="MichiruMask1">
+											<rect x="0" y="0" width="350" height="175" fill="white" />
+											<circle cx="289.5" cy="161.5" r="77.5" fill="black" />
+											<circle cx="175" cy="175" r="11" fill="black" />
+											<rect x="0" y="175" width="350" height="175" fill="black" />
+										</mask>
+										<g transform-origin="175 175">
+											<circle
+												cx="242.5"
+												cy="182.5"
+												r="101.5"
+												fill="white"
+												mask="url(#MichiruMask1)"
+												transform-origin="175 175"
+												transform="rotate(0)"
+											>
+												<animateTransform
+													attributeName="transform"
+													attributeType="XML"
+													type="rotate"
+													values="0;-720;-720;-1080"
+													keyTimes="0;0.3;0.7;1"
+													keySplines="
+													0.45, 0, 0.55, 1;
+													0 0 1 1;
+													0.45, 0, 0.55, 1;"
+													calcMode="spline"
+													dur="5s"
+													repeatCount="indefinite"
+												/>
+											</circle>
+											<circle
+												cx="242.5"
+												cy="182.5"
+												r="101.5"
+												fill="white"
+												mask="url(#MichiruMask1)"
+												transform-origin="175 175"
+												transform="rotate(90)"
+											>
+												<animateTransform
+													attributeName="transform"
+													attributeType="XML"
+													type="rotate"
+													values="90;-630;-630;-990"
+													keyTimes="0;0.3;0.7;1"
+													keySplines="
+													0.45, 0, 0.55, 1;
+													0 0 1 1;
+													0.45, 0, 0.55, 1;"
+													calcMode="spline"
+													dur="5s"
+													repeatCount="indefinite"
+												/>
+											</circle>
+											<circle
+												cx="242.5"
+												cy="182.5"
+												r="101.5"
+												fill="white"
+												mask="url(#MichiruMask1)"
+												transform-origin="175 175"
+												transform="rotate(180)"
+											>
+												<animateTransform
+													attributeName="transform"
+													attributeType="XML"
+													type="rotate"
+													values="180;-540;-540;-900"
+													keyTimes="0;0.3;0.7;1"
+													keySplines="
+													0.45, 0, 0.55, 1;
+													0 0 1 1;
+													0.45, 0, 0.55, 1;"
+													calcMode="spline"
+													dur="5s"
+													repeatCount="indefinite"
+												/>
+											</circle>
+											<circle
+												cx="242.5"
+												cy="182.5"
+												r="101.5"
+												fill="white"
+												mask="url(#MichiruMask1)"
+												transform-origin="175 175"
+												transform="rotate(270)"
+											>
+												<animateTransform
+													attributeName="transform"
+													attributeType="XML"
+													type="rotate"
+													values="270;-450;-450;-810"
+													keyTimes="0;0.3;0.7;1"
+													keySplines="
+													0.45, 0, 0.55, 1;
+													0 0 1 1;
+													0.45, 0, 0.55, 1;"
+													calcMode="spline"
+													dur="5s"
+													repeatCount="indefinite"
+												/>
+											</circle>
+											<animateTransform
+												attributeName="transform"
+												attributeType="XML"
+												type="scale"
+												values="0;1;1;0"
+												keyTimes="0;0.15;0.8;1"
+												keySplines="
+													0.45, 0, 0.55, 1;
+													0 0 1 1;
+													0.45, 0, 0.55, 1;"
+												calcMode="spline"
+												dur="5s"
+												repeatCount="indefinite"
+											/>
+										</g>
+									</svg>
+									<svg viewBox="25 25 300 300" xmlns="http://www.w3.org/2000/svg" class="w-100 d-none" id="Sakurako">
+										<!-- <rect width="350" height="350" fill="red" /> -->
+										<!-- top circle -->
+										<g>
+											<mask id="SakurakoMask1">
+												<circle cx="175" cy="160" r="200" fill="white" />
+												<circle cx="175" cy="167" r="67" fill="black" />
+											</mask>
+											<circle cx="175" cy="160" r="67" fill="white" mask="url(#SakurakoMask1)" />
+											<rect x="117" y="104" width="116" height="50" fill="white" mask="url(#SakurakoMask1)" />
+											<animateTransform
+												attributeName="transform"
+												attributeType="XML"
+												type="translate"
+												values="0 40;0 40;0;0;0 40;0 40"
+												keyTimes="0;0.1;0.2;0.8;0.9;1"
+												keySplines="
+													0 0 1 1;
+													0.45, 0, 0.55, 1;
+													0 0 1 1;
+													0.45, 0, 0.55, 1;
+													0 0 1 1;"
+												calcMode="spline"
+												dur="5s"
+												repeatCount="indefinite"
+											/>
+											<animate
+												attributeName="opacity"
+												values="0;0;1;1;0;0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.1;0.2;0.8;0.9;1"
+												keySplines="
+												0.0 0.0 1 1;
+												0.0 0.0 1 1;
+												0.0 0.0 1 1;
+												0.0 0.0 1 1;
+												0.0 0.0 1 1;"
+												calcMode="spline"
+											/>
+										</g>
+										<circle
+											cx="175"
+											cy="170"
+											r="85"
+											fill="none"
+											stroke="white"
+											stroke-width="8"
+											stroke-dasharray="101.5 0 101.5"
+											pathLength="360"
+											transform-origin="175 170"
+											transform="rotate(-11.25)"
+										>
+											<animate
+												attributeName="stroke-dasharray"
+												values="
+													0 203 0 200;
+													0 203 0 200;
+													101.5 0 101.5 200;
+													101.5 0 101.5 200;
+													0 203 0 200;
+													0 203 0 200"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.1;0.3;0.7;0.9;1"
+												keySplines="
+												0.0 0.0 1 1;
+												0.5, 1, 0.89, 1
+												0.0 0.0 1 1;
+												0.11, 0, 0.5, 0
+												0.0 0.0 1 1;"
+												calcMode="spline"
+											/>
+										</circle>
+										<!-- cross -->
+										<g>
+											<line x1="175" x2="175" y1="43" y2="83" stroke="white" stroke-width="6" />
+											<line x1="162" x2="188" y1="58" y2="58" stroke="white" stroke-width="6" />
+											<animateTransform
+												attributeName="transform"
+												attributeType="XML"
+												type="translate"
+												values="0 60;0;0;0 60"
+												keyTimes="0;0.1;0.9;1"
+												keySplines="
+													0.45, 0, 0.55, 1;
+													0 0 1 1;
+													0.45, 0, 0.55, 1;"
+												calcMode="spline"
+												dur="5s"
+												repeatCount="indefinite"
+											/>
+											<animate
+												attributeName="opacity"
+												values="0;1;1;0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.1;0.9;1"
+												keySplines="
+												0.0 0.0 1 1;
+												0.0 0.0 1 1;
+												0.0 0.0 1 1;"
+												calcMode="spline"
+											/>
+										</g>
+										<!-- birds -->
+										<g>
+											<path
+												d="M254.935 100.67C253.004 100.774 248.914 100.981 248.003 100.981C250.605 103.308 253.514 109.521 254.721 112.521C253.4 129.815 258.453 141.435 258.763 142.677C259.012 143.67 258.522 149.299 258.246 151.989L255.349 154.265H263.212L261.143 152.713L261.453 148.574C267.05 164.905 282.875 165.535 293.934 165.535C299.811 177.454 310.754 190.109 315.065 194.937C316.054 195.207 320.37 194.218 319.727 192.449C310.928 183.698 295.553 152.767 294.294 148.721C292.316 134.244 279.278 117.43 270.248 113.914C270.089 99.9477 262.193 98.7914 254.935 100.67Z"
+												fill="white"
+												transform-origin="283.895 147.475"
+											>
+												<animateTransform
+													attributeName="transform"
+													attributeType="XML"
+													type="rotate"
+													values="-40;0;0;-40"
+													keyTimes="0;0.1;0.9;1"
+													keySplines="
+													0.45, 0, 0.55, 1;
+													0 0 1 1;
+													0.45, 0, 0.55, 1;"
+													calcMode="spline"
+													dur="5s"
+													repeatCount="indefinite"
+												/>
+											</path>
+											<g transform-origin="175" transform="scale(-1, 1)">
+												<path
+													d="M254.935 100.67C253.004 100.774 248.914 100.981 248.003 100.981C250.605 103.308 253.514 109.521 254.721 112.521C253.4 129.815 258.453 141.435 258.763 142.677C259.012 143.67 258.522 149.299 258.246 151.989L255.349 154.265H263.212L261.143 152.713L261.453 148.574C267.05 164.905 282.875 165.535 293.934 165.535C299.811 177.454 310.754 190.109 315.065 194.937C316.054 195.207 320.37 194.218 319.727 192.449C310.928 183.698 295.553 152.767 294.294 148.721C292.316 134.244 279.278 117.43 270.248 113.914C270.089 99.9477 262.193 98.7914 254.935 100.67Z"
+													fill="white"
+													transform-origin="283.895 147.475"
+													transform="rotate(-40)"
+												>
+													<animateTransform
+														attributeName="transform"
+														attributeType="XML"
+														type="rotate"
+														values="-40;0;0;-40"
+														keyTimes="0;0.1;0.9;1"
+														keySplines="
+													0.45, 0, 0.55, 1;
+													0 0 1 1;
+													0.45, 0, 0.55, 1;"
+														calcMode="spline"
+														dur="5s"
+														repeatCount="indefinite"
+													/>
+												</path>
+											</g>
+											<animate
+												attributeName="opacity"
+												values="0;1;1;0"
+												dur="5s"
+												repeatCount="indefinite"
+												keyTimes="0;0.1;0.9;1"
+												keySplines="
+												0.0 0.0 1 1;
+												0.0 0.0 1 1;
+												0.0 0.0 1 1;"
+												calcMode="spline"
+											/>
+										</g>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer Start -->
+
+		<div class="container mt-auto">
+			<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+				<div class="col-4 mb-md-0 text-light d-flex align-items-center">
+					<p class="my-auto me-1">© 2023</p>
+					<p class="my-auto d-none d-sm-block">hisazakura</p>
+				</div>
+
+				<a class="col-4 mb-md-0 text-center" href="/" data-link>
+					<svg viewBox="-50 -50 500 500" xmlns="http://www.w3.org/2000/svg" height="32">
+						<path d="M200,0l-200,200l200,200l200,-200z" fill="none" stroke="white" stroke-width="50" />
+						<path d="M50,275l150,-150l150,150" fill="none" stroke="white" stroke-width="50" />
+						<path d="M50,125l150,150l150,-150" fill="none" stroke="white" stroke-width="50" />
+					</svg>
+				</a>
+				<ul class="col-4 mb-md-0 d-flex justify-content-end">
+					<li class="ms-3">
+						<a class="text-light" href="https://github.com/hisazakura" target="_blank">
+							<svg height="24" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="white">
+								<path
+									xmlns="http://www.w3.org/2000/svg"
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z"
+									transform="scale(64)"
+								/>
+							</svg>
+						</a>
+					</li>
+					<li class="ms-3">
+						<a class="text-light" href="https://discordapp.com/users/598093027730391040">
+							<svg
+								height="24"
+								viewBox="0 -28.5 256 256"
+								xmlns="http://www.w3.org/2000/svg"
+								fill="white"
+								preserveAspectRatio="xMidYMid"
+							>
+								<g>
+									<path
+										d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z"
+										fill-rule="nonzero"
+									></path>
+								</g>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</footer>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+		<script
+			src="https://unpkg.com/htmx.org@1.9.3"
+			integrity="sha384-lVb3Rd/Ca0AxaoZg5sACe8FJKF0tnUgR2Kd7ehUOG5GCcROv5uBIZsOqovBAcWua"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+			integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+			crossorigin="anonymous"
+		></script>
+		<script src="./javascript/svg-animations.js"></script>
+	</body>
+</html>

@@ -25,7 +25,7 @@
 			<div class="navbar-collapse collapse w-100 order-0 order-md-0">
 				<ul class="navbar-nav me-auto">
 					<li class="nav-item mx-3">
-						<a class="nav-link" href="./about.html" data-link>Works</a>
+						<a class="nav-link" href="./works.html" data-link>Works</a>
 					</li>
 				</ul>
 			</div>
@@ -65,20 +65,109 @@
 		<!-- CONTENT -->
 		<div class="container" id="content">
 			<div class="container my-4">
-				<div class="mt-2 mb-4">
-					<img src="./images/logo.svg" alt="Athanasia" class="d-flex mx-auto mb-4" height="32" />
-					<p class="text-center text-light-subtle fs-5 mb-4">
-						Hi! I'm Athanasia, at least that's what I call myself across the internet.<br />
-						I'm a programming enthusiast and currently learning multiple fields in programming and computer science.
+				<div class="d-flex justify-content-center mt-2 mb-4">
+					<h1 class="text-light text-center">Complex Mapper</h1>
+				</div>
+				<div class="row justify-content-center mb-4 text-light text-center" id="loading-spinner">
+					<div class="spinner-border mb-2" role="status">
+						<span class="visually-hidden">Loading JavaScript...</span>
+					</div>
+					<p>Loading JavaScript...</p>
+					<div class="col col-11 col-md-8 col-lg-6 col-xl-4 d-flex justify-content-center d-none" id="reload-page">
+						<button type="button" class="btn btn-outline-secondary text-light" onclick="window.location.reload();">
+							Reload Page
+						</button>
+					</div>
+				</div>
+				<div class="row justify-content-center mb-4 text-light text-center d-none" id="canvas-not-supported">
+					<h4>Error</h4>
+					<p>
+						Canvas is not supported in this browser. Consider navigating to
+						<a href="./works.html" class="link-light" data-link>Works</a>
+						page
 					</p>
-					<p class="text-center text-light-subtle fs-5 mb-4">
-						This website is created as my personal website and portfolio to showcase my works.<br />
-						Technically, this website itself is also one of my works as I built this from the ground up.
-					</p>
-					<p class="text-center text-light-subtle fs-5 mb-4">
-						If you're interested you can contact me through<br />
-						one of the contacts in bottom right.
-					</p>
+				</div>
+				<div id="app-content">
+					<div class="row justify-content-center mt-2">
+						<div
+							class="card col col-11 col-md-8 col-lg-6 col-xl-4 bg-darker border-light d-grid p-0 m-3 overflow-hidden"
+							style="aspect-ratio: 1"
+						>
+							<canvas id="input-map"></canvas>
+						</div>
+						<div
+							class="card col col-11 col-md-8 col-lg-6 col-xl-4 bg-darker border-light d-grid p-0 m-3 overflow-hidden"
+							style="aspect-ratio: 1"
+						>
+							<canvas id="output-map"></canvas>
+						</div>
+					</div>
+					<div class="row justify-content-center mt-2">
+						<div class="col col-11 col-md-8 col-lg-6 col-xl-4 text-light d-flex">
+							<!-- <div class="text-light p-0 align-self-center mx-2">
+								<h6 class="m-0 pb-1">Function:</h6>
+							</div> -->
+							<input
+								type="text"
+								class="form-control border-secondary text-light bg-darker text-center"
+								id="function-input"
+								title="Complex Function"
+								maxlength="2000"
+								value="10/z"
+							/>
+						</div>
+					</div>
+					<div class="row justify-content-center mt-2">
+						<div class="col col-11 col-md-8 col-lg-6 col-xl-4 text-light d-flex align-items-center">
+							<div class="col col-2 px-1 text-center">
+								<input
+									type="number"
+									class="form-control border-secondary text-light bg-darker text-center"
+									id="x-min-input"
+									title="Real lower bound"
+									step="0.01"
+									value="-5"
+								/>
+							</div>
+							<div class="col col-2 text-center mathcal">&#60; Re &#60;</div>
+							<div class="col col-2 px-1 text-center">
+								<input
+									type="number"
+									class="form-control border-secondary text-light bg-darker text-center"
+									id="x-max-input"
+									title="Real upper bound"
+									step="0.01"
+									value="5"
+								/>
+							</div>
+							<div class="col col-2 px-1 text-center">
+								<input
+									type="number"
+									class="form-control border-secondary text-light bg-darker text-center"
+									id="y-min-input"
+									title="Imaginary lower bound"
+									step="0.01"
+									value="-5"
+								/>
+							</div>
+							<div class="col col-2 text-center mathcal">&#60; Im &#60;</div>
+							<div class="col col-2 px-1 text-center">
+								<input
+									type="number"
+									class="form-control border-secondary text-light bg-darker text-center"
+									id="y-max-input"
+									step="0.01"
+									title="Imaginary upper bound"
+									value="5"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="row justify-content-center mt-2">
+						<div class="col col-11 col-md-8 col-lg-6 col-xl-4 d-flex justify-content-center">
+							<button type="button" class="btn btn-outline-secondary text-light" id="map-function">Map Function</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -151,5 +240,7 @@
 			integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
 			crossorigin="anonymous"
 		></script>
+		<script src="./javascript/complex-mapper.js"></script>
+		<script src="https://unpkg.com/mathjs@11.10.0/lib/browser/math.js"></script>
 	</body>
 </html>
