@@ -1,12 +1,14 @@
 <br/>
 <p align="center">
   <a href="https://hisazakura.github.io">
-    <img src="https://raw.githubusercontent.com/hisazakura/hisazakura.github.io/main/images/logo.svg" alt="Logo" width="80" height="80">
+    <img src="https://raw.githubusercontent.com/hisazakura/hisazakura.github.io/main/images/logo.svg#gh-dark-mode-only" alt="Logo" width="80" height="80">
+    <img src="https://raw.githubusercontent.com/hisazakura/hisazakura.github.io/main/images/logo-light.svg#gh-light-mode-only" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">
     Athanasia on 
-    <img src="https://raw.githubusercontent.com/hisazakura/hisazakura.github.io/main/images/pages.svg" alt="Pages" height="22" style="vertical-align:middle">
+    <img src="https://raw.githubusercontent.com/hisazakura/hisazakura.github.io/main/images/pages.svg#gh-dark-mode-only" alt="Pages" height="22" style="vertical-align:middle">
+    <img src="https://raw.githubusercontent.com/hisazakura/hisazakura.github.io/main/images/pages-light.svg#gh-light-mode-only" alt="Pages" height="22" style="vertical-align:middle">
   </h3>
 
   <p align="center">
