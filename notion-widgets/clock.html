@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Clock
+        </title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
+            :root {
+                --white: #EAEAEA;
+                --teal: #00ABB3;
+                --grey: #B2B2B2;
+                --black: #3C4048;
+                --font-size: 2em;
+                --dial-size: var(--font-size);
+            }
+            #clock {
+                width: fit-content;
+                height: fit-content;
+                display: flex;
+                flex-direction: row;
+                gap: 0.5em;
+                padding: 1em;
+                background-color: var(--white);
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+                outline: 0.1em solid var(--teal);
+                outline-offset: -0.3em;
+                border-radius: 0.5em;
+                outline-style: groove;
+            }
+            #hour-dial, #min-dial, #sec-dial {
+                width: var(--dial-size);
+                height: fit-content;
+                background-color: var(--black);
+                color: var(--teal);
+                border-radius: 0.2em;
+                font-family: 'Wallpoet', cursive;
+                font-size: var(--font-size);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="clock">
+            <div id="hour-dial"></div>
+            <div id="min-dial"></div>
+            <div id="sec-dial"></div>
+        </div>
+    </body>
+    <script>
+        function updateTime() {
+            var now = new Date();
+            const hourDiv = document.getElementById("hour-dial"); 
+            const minDiv = document.getElementById("min-dial");
+            const secDiv = document.getElementById("sec-dial");
+            currHour = now.getHours()
+            currMin = now.getMinutes()
+            currSec = now.getSeconds()
+            hourDiv.innerHTML = currHour.toString().padStart(2, '0');
+            minDiv.innerHTML = currMin.toString().padStart(2, '0');
+            secDiv.innerHTML = currSec.toString().padStart(2, '0');
+            setTimeout(updateTime, 1000);
+        }
+        updateTime(); 
+    </script>
+</html>
