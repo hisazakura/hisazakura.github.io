@@ -3,6 +3,7 @@
 	<head>
 		<title>Clock</title>
 		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@700&display=swap');
 			#container {
 				position: absolute;
 				top: 0;
@@ -19,7 +20,7 @@
 			}
 			.clock-font {
 				color: white;
-				font-family: monospace;
+				font-family: 'Chivo Mono', monospace;
 				font-weight: 800;
 				font-size: 1em;
 			}
@@ -41,7 +42,7 @@
 		const clock = document.getElementById("clock");
 		const container = document.getElementById("container");
 		function resizeClock() {
-			clock.style.transform = `scale(${Math.min(container.offsetHeight / clock.offsetHeight, container.offsetWidth / clock.offsetWidth)})`;
+			clock.style.transform = `scale(${Math.min(container.offsetHeight / clock.offsetHeight, container.offsetWidth / clock.offsetWidth) * 0.99})`;
 		}
 		new ResizeObserver(resizeClock).observe(container)
 
