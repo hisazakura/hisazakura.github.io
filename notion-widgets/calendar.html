@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Simple Calendar</title>
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;700&display=swap");
+			table {
+				width: 100%;
+				border-collapse: collapse;
+				table-layout: fixed;
+				font-family: "Chivo Mono", monospace;
+			}
+
+			th,
+			td {
+				border: 1px solid #ddd;
+				overflow: hidden;
+			}
+
+			tr.content-row > th > div,
+			tr.content-row > td > div {
+				display: flex;
+				aspect-ratio: 1;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.header {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-weight: 700;
+				aspect-ratio: 7;
+			}
+
+			.header > p {
+				transform-origin: center center;
+			}
+
+			.fade {
+				opacity: 0.5;
+			}
+
+			a,
+			a:hover,
+			a:visited,
+			a:active {
+				color: inherit;
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+		<table id="container">
+			<thead>
+				<tr>
+					<td colspan="7">
+						<div class="header">
+							<p id="header-text">February 2024</p>
+						</div>
+					</td>
+				</tr>
+			</thead>
+			<thead>
+				<tr class="content-row">
+					<th>
+						<div><p>Sun</p></div>
+					</th>
+					<th>
+						<div><p>Mon</p></div>
+					</th>
+					<th>
+						<div><p>Tue</p></div>
+					</th>
+					<th>
+						<div><p>Wed</p></div>
+					</th>
+					<th>
+						<div><p>Thu</p></div>
+					</th>
+					<th>
+						<div><p>Fri</p></div>
+					</th>
+					<th>
+						<div><p>Sat</p></div>
+					</th>
+				</tr>
+			</thead>
+			<tbody id="calendar-body"></tbody>
+		</table>
+
+		<script>
+			const calendarBody = document.getElementById("calendar-body");
+
+			function scaleCalendar() {
+				const cell = document.querySelector(".content-row th div");
+				const elements = document.querySelectorAll(".content-row th div p, .content-row td div p");
+				const scale = Math.min(
+					(cell.offsetHeight / elements[0].offsetHeight) * 0.5,
+					(cell.offsetWidth / elements[0].offsetWidth) * 0.5
+				);
+				for (let i = 0; i < elements.length; i++) {
+					elements[i].style.transform = `scale(${scale})`;
+				}
+
+				// scale header
+				const header = document.querySelector(".header");
+				const headerContent = document.querySelector(".header p");
+				const headerScale = Math.min(
+					(header.offsetHeight / headerContent.offsetHeight) * 0.5,
+					(header.offsetWidth / headerContent.offsetWidth) * 0.5
+				);
+				headerContent.style.transform = `scale(${scale})`;
+			}
+			new ResizeObserver(scaleCalendar).observe(document.getElementById("container"));
+
+			function createCalendar(month, year) {
+				if (!month) month = new Date().getMonth();
+				if (!year) year = new Date().getFullYear();
+
+				document.querySelector("#header-text").innerHTML = new Date(year, month + 1, 0).toLocaleDateString('en-us', { year:"numeric", month:"long" });
+
+				const daysInPreviousMonth = new Date(year, month, 0).getDate();
+				const daysInCurrentMonth = new Date(year, month + 1, 0).getDate();
+				const daysInNextMonth = new Date(year, month + 1, 0).getDate();
+
+				const firstDayOfMonth = new Date(year, month, 1).getDay();
+
+				let dayCounter = -firstDayOfMonth + 1;
+
+				for (let i = 0; i < 6; i++) {
+					if (dayCounter >= daysInCurrentMonth) break;
+					const row = document.createElement("tr");
+					row.classList.add("content-row");
+
+					for (let j = 0; j < 7; j++) {
+						const cell = document.createElement("td");
+						const contentContainer = document.createElement("div");
+						const content = document.createElement("p");
+
+						if (dayCounter > daysInCurrentMonth || dayCounter < 1) content.classList.add("fade");
+
+						content.innerText =
+							dayCounter > daysInCurrentMonth
+								? dayCounter++ - daysInCurrentMonth
+								: dayCounter <= 0
+								? daysInPreviousMonth + dayCounter++
+								: dayCounter++;
+
+						contentContainer.appendChild(content);
+						cell.appendChild(contentContainer);
+						row.appendChild(cell);
+					}
+
+					calendarBody.appendChild(row);
+				}
+
+				scaleCalendar();
+			}
+			createCalendar();
+		</script>
+	</body>
+</html>
