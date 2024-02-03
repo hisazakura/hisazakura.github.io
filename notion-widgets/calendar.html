@@ -220,7 +220,7 @@
 								? daysInPreviousMonth + dayCounter++
 								: dayCounter++;
 
-						if (isDateEqual(new Date(year, month, dayCounter), new Date())) {
+						if (isDateEqual(new Date(year, month, dayCounter-1), new Date())) {
 							content.classList.add("current-day");
 						}
 
