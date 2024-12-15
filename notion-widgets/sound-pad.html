@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sound Pad</title>
+		<style>
+			body {
+				display: flex;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				font-family: "Roboto", sans-serif;
+				font-weight: 400;
+				font-style: normal;
+			}
+
+			.pad {
+				display: grid;
+				padding: 5%;
+				gap: 5%;
+				aspect-ratio: 1;
+				background-color: #e16036;
+				object-fit: cover;
+				grid-template-columns: repeat(4, 1fr);
+				grid-template-rows: repeat(4, 1fr);
+				direction: rtl;
+			}
+
+			.pad-button {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 10%;
+				background: rgb(245, 247, 220);
+				background: linear-gradient(135deg, rgba(245, 247, 220, 1) 0%, rgba(221, 222, 198, 1) 100%);
+				cursor: pointer;
+				transition: background-color 0.1s ease;
+			}
+
+			.pad-button div {
+				display: flex;
+				justify-content: start;
+				align-items: end;
+				width: 85%;
+				height: 85%;
+				border-radius: 10%;
+				background: rgb(245, 247, 220);
+				background: linear-gradient(315deg, rgba(245, 247, 220, 1) 0%, rgba(221, 222, 198, 1) 100%);
+			}
+
+			.pad-button div p {
+				margin: 0;
+				color: #494a42;
+			}
+
+			@keyframes flash {
+				0% {
+					filter: brightness(2);
+				}
+				100% {
+					filter: brightness(1);
+				}
+			}
+
+			.flash {
+				animation: flash 0.3s ease-in-out;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="pad-container" class="pad"></div>
+		<script>
+			const soundPath = "/public/notec.mp3";
+			const padContainer = document.getElementById("pad-container");
+			const padButtons = document.querySelectorAll(".pad-button");
+
+			const pitches = [
+				1, 1.122462048309373, 1.2599210498948732, 1.3348398541700344, 1.4983070768766815, 1.681792830507429,
+				1.887748625363387, 2, 2, 2.244924096618746, 2.5198420997897464, 2.6696797083400687, 2.996614153753363,
+				3.363585661014858, 3.775497250726774, 4,
+			];
+
+			function createPadButton(index) {
+				const padButton = document.createElement("div");
+				padButton.classList.add("pad-button");
+				padButton.setAttribute("data-index", index);
+				padButton.setAttribute("data-sound", soundPath);
+
+				const innerDiv = document.createElement("div");
+				padButton.appendChild(innerDiv);
+
+				padButton.addEventListener("click", () => {
+					const audio = new Audio(soundPath);
+					audio.volume = 0.3;
+					audio.preservesPitch = false;
+					audio.playbackRate = pitches[15 - index];
+					audio.play();
+
+					padButton.classList.add("flash");
+					setTimeout(() => {
+						padButton.classList.remove("flash");
+					}, 500);
+				});
+
+				return padButton;
+			}
+
+			for (let i = 0; i < 16; i++) {
+				const padButton = createPadButton(i);
+				padContainer.appendChild(padButton);
+			}
+		</script>
+	</body>
+</html>
